@@ -1,0 +1,30 @@
+<div class="w-full flex items-center justify-center h-screen">
+    <div class="w-[50%] border h-[70vh] p-5 bg-white rounded-md shadow-md relative overflow-y-auto overflow-x-hidden">
+        <div class="flex items-center justify-between mb-3 bg-white p-3 rounded-md shadow-md">
+            <div>
+                <h1 class="text-base font-bold text-black">NoteApp <span class="block text-sm font-thin text-black">Create and save your note</span></h1>
+            </div>
+            <a href="/note/add" class="bg-blue-500 px-5 py-2 rounded-md text-white font-bold text-base hover:bg-blue-300 transition-all">Create</a>
+        </div>
+        <% if (msg.length !== 0) { %>
+            <div class="alert alert-success" role="alert">
+                <%= msg %>
+              </div>
+        <% } %>
+        <div class="grid grid-cols-3">
+            <div class="shadow-md border rounded-md p-3 bg-white">
+                <div class="flex items-start justify-between">
+                    <h1 class="text-sm font-bold text-black">Judul <span class="block text-xs font-normal">Keterangan</span></h1>
+                    <a href="" class="text-xs font-medium text-red-600">Delete</a>
+                </div>
+                <a href="" class="text-black border text-sm font-bold shadow w-full py-2 block rounded-md text-center mt-3 hover:bg-black hover:text-white transition-all">Detail</a>
+            </div>
+        </div>
+
+
+        <!-- absolute -->
+        <!-- <div class="absolute -left-[70px] bg-black p-3">
+            <img src="img/3.jpg" width="30" class="rounded-full border" alt="">
+        </div> -->
+    </div>
+</div>
